@@ -17,6 +17,7 @@ def fizzbuzz(n):
 
     tmp_result = []
     for i in range(1, n + 1):
+        
         if (i % 3) == 0 and (i % 5) == 0:
             tmp_result.append("FizzBuzz")
 
@@ -28,10 +29,11 @@ def fizzbuzz(n):
 
        else:
             tmp_result.append(str(i))
+           
     print(" ".join(tmp_result))
 
 
-if __name__ == '__main__':
+if __name__ == __main__:
     if len(sys.argv) <= 1:
         print("Missing number")
         print("Usage: ./0-fizzbuzz.py <number>")
